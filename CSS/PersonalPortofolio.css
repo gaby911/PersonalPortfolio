@@ -76,6 +76,9 @@ html {
     html {
         font-size: 55%;
     }
+    .code span {
+        color: #ff7f50;
+    }
 }
 
 
