@@ -5,6 +5,7 @@
     --main-red: #be3144;
     --main-blue: #007cc7;
     --main-gray: #203657;
+    --main-orange: #ff7f50;
 }
 
 
@@ -91,6 +92,7 @@ body {
     font-weight: 400;
     line-height: 1.4;
     color: var(--main-white);
+    
 }
 
 h1,
@@ -176,7 +178,7 @@ video {
 .welcome-section {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
     width: 100%;
     height: 100vh;
@@ -184,15 +186,46 @@ video {
     background-image: linear-gradient(62deg, #203657 100%);
 }
 
-.welcome-section>p {
+.about-row {
+    display: flex;
+    flex-direction: column;
     font-size: 3rem;
     font-weight: 200;
     font-style: italic;
-    color: var(--main-red);
+    color: var(--main-white);
     text-align: center;
-    max-width: 640px;
+    max-width: 800px;
+    margin-top: auto;
+   
+    
+}
+.about-pic {
+    margin: 30px auto;
+    margin-top: 50px;
+    width: 300px;
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(158, 158, 158, 0.68);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(158, 158, 158, 0.68);
+    box-shadow: 0px 0px 5px 1px rgba(158, 158, 158, 0.68);
+  border-radius: 50%;
+  }
+
+  @media (max-width: 40.625em) {
+    .about-pic {
+        width: 200px;
+        margin-top: 30px;
+    }
+    .about-text {
+        margin: 10px ;
+    }
+    .about-row{
+        font-size:1em;
+    }
+    h1{
+        font-size:2em;
+    }
 }
 
+  
 
 /* Skills section */
 
@@ -229,6 +262,7 @@ video {
     text-align: center;
     padding: 5rem 2rem;
     background: var(--main-blue);
+    
 }
 
 .projects-section-header {
@@ -254,6 +288,7 @@ video {
     max-width: 1280px;
     margin: 0 auto;
     margin-bottom: 6rem;
+    
 }
 
 @media (max-width: 30.625em) {
@@ -262,6 +297,7 @@ video {
     }
     .projects-grid {
         grid-template-columns: 1fr;
+        
     }
 }
 
@@ -277,7 +313,7 @@ video {
 }
 
 .project:hover .code {
-    color: #ff7f50;
+    color: var(--main-red);
 }
 
 .project-image {
@@ -305,7 +341,7 @@ video {
 .btn-show-all {
     font-size: 2rem;
     background: var(--main-gray);
-    transition: background 0.3s ease-out;
+    transition: background 0.7s ease-out;
 }
 
 .btn-show-all:hover {
@@ -320,6 +356,16 @@ video {
     margin-left: 10px;
     transform: translateX(0);
     transition: transform 0.3s ease-out;
+}
+
+.project-hide{
+    display: none;
+    
+}
+.project-hide.open{
+    display: block;
+    
+
 }
 
 
@@ -367,7 +413,7 @@ video {
 }
 
 .contact-details:hover {
-    transform: translateY(8px);
+    transform: translateY(-8px);
 }
 
 

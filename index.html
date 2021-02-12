@@ -24,7 +24,7 @@
                 <a href="#skills-section">Skills</a>
             </li>
             <li>
-                <a href="/media/CV Florin Abagiu.pdf" target="_blank">Resume</a>
+                <a href="media/CV Florin Abagiu.pdf" target="_blank">Resume</a>
             </li>
             <li>
                 <a href="#projects">Projects</a>
@@ -40,11 +40,21 @@
     <!-- START WELCOME SECTION -->
 
     <section id="welcome-section" class="welcome-section">
-        <h1>Hey, I am Gabi</h1>
-        <p id="p1"><strong>a software developer</strong> </p>
-        <p id="p2">I am an ambitious person, eager for knowledge and always looking for a bigger challenge.</p>
+        <div class="row about-row">
+            <div class="col-md-6 col-xs-12">
+                <img src="media/profile_picture.png" class="img-circle img-responsive about-pic">
+            </div>
+            <div class="col-md-6 col-xs-12" >
+                <h1 class="about-text">Hey, I am Gabi</h1>
+                <p id="p1" class="about-text">With a big passion about technology, I'm an ambitious person, eager for knowledge and always looking for a bigger challenge. </p>
+                <br>
+                <p id="p2" class="about-text"> Self-motivated. Greatly organized. Avid for self-improvement and hardworking, I constantly seek  new ways of widening my horizons,
+                currently working my way to reconvert my career. </p>
 
-        <p id="p3">I am proud of being hardworking, reliable, and team oriented.</p>
+            </div>
+        </div>
+        
+       
     </section>
 
     <!-- END WELCOME SECTION -->
@@ -61,10 +71,10 @@
                 <li>Bootstrap</li>
             </ul>
             <ul class="column">
-                <li>Node</li>
+                <li>Bulma</li>
+                <li>NodeJs</li>
                 <li>Express</li>
                 <li>MySQL</li>
-                <li>MongoDB</li>
                 <li>Git</li>
             </ul>
         </div>
@@ -108,7 +118,7 @@
 
             <a href="https://github.com/gaby911/Coffee-Machine" target="_blank" class="project project-tile">
                 <video data-v-6659e392="" controls="controls" autoplay="autoplay" loop="loop" muted="muted" width="100%" src="./media/Coffee Machine demonstration.mp4" class="project-video">
-        </video>
+                </video>
 
                 <p class="project-title">
                     <span class="code">&lt;</span> Java Coffee Machine Program
@@ -126,21 +136,28 @@
 
             <a href="https://github.com/gaby911/StoreApp" target="_blank" class="project project-tile">
                 <video data-v-6659e392="" controls="controls" autoplay="autoplay" loop="loop" muted="muted" width="100%" src="./media/Store App demo.mp4" class="project-video">
-        </video>
+                </video>
                 <p class="project-title">
                     <span class="code">&lt;</span> Java Store App
                     <span class="code">&#47;&gt;</span>
                 </p>
             </a>
 
+            <a href="https://color-game-v001.glitch.me/" target="_blank" class="project project-tile project-hide">
+                <img class="project-image" src="./media/ColorGame.PNG" alt="project" />
+                <p class="project-title">
+                    <span class="code">&lt;</span> Color Game
+                    <span class="code">&#47;&gt;</span>
+                </p>
+            </a>
         </div>
 
-        <!-- <a
-    href="#"
-    class="btn btn-show-all"
-    target="_blank"
-    >Show all<i class="fas fa-chevron-right"></i
-  ></a> -->
+        <a href="#project project-tile project-hide" class="btn btn-show-all"  id="showBtn">
+            Show all<i class="fas fa-chevron-down"></i>
+        </a>
+
+       
+
     </section>
 
     <!-- END PROJECTS SECTION -->
@@ -175,7 +192,7 @@
     </footer>
 
     <!-- END FOOTER SECTION -->
-
+<script src="app.js"></script>
 </body>
 
 </html>
