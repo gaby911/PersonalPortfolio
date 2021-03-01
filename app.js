@@ -11,6 +11,3 @@ showBtn.addEventListener('click',function(){
         showBtn.innerHTML = 'Hide<i class="fas fa-chevron-up"></i>';
     }
 });
-
-    
-
